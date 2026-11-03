@@ -1,0 +1,32 @@
+<html><head>
+	<link href="assets/style.css" rel="stylesheet">
+	<title>Login</title>
+</head><body>
+	<div id="login-box">
+		<div id="options">
+			<button disabled class="selected" id="login" onclick="toggleState(this)">Login</button>
+			<button class="unselected" id="sign-up" onclick="toggleState(this)">Sign up</button>
+		</div>
+		<br>
+		<form>
+			<label class="field-label" for="username">Username</label>
+			<br>
+			<input id="username" placeholder="Username" type="text">
+			<br>
+			<label class="field-label" for="password">Password</label>
+			<br>
+			<input id="password" placeholder="Password" type="password">
+			<div id="checkbox-box">
+				<span id="show-password">
+					<input id="checkbox-show-password" onclick="togglePassword(this.checked)" type="checkbox">
+					<label class="check-label" for="checkbox-show-password">Show password</label>
+				</span><span id="save-session">
+					<input id="checkbox-save-session" type="checkbox">
+					<label class="check-label" for="checkbox-save-session">Save session</label>
+				</span>
+			</div>
+			<input id="submit" type="submit" value="Login">
+		</form>
+	</div>
+</body></html>
+<script src="assets/script.js"></script>

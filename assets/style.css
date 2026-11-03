@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} body {
+	background-color: #121314;
+	color: #fff;
+	font-family: sans-serif;
+} #login-box {
+	background-color: #242628;
+	border: 1px solid #fff;
+	border-radius: 32px;
+	justify-self: center;
+	margin-top: 32px;
+	padding: 16px 32px;
+	height: 384px;
+	width: 512px;
+} #options {
+	margin-bottom: 32px;
+} .selected, .unselected {
+	border: unset;
+	font-size: 32px;
+} .selected {
+	background-color: #2f2f2f;
+	border-bottom: 1px solid #fff;
+	font-weight: bold;
+} .unselected {
+	background-color: unset;
+	border-bottom: 1px solid #7f7f7f;
+} .unselected:hover {
+	background-color: #1f1f1f;
+	cursor: pointer;
+} .unselected:active {
+	background-color: #2f2f2f;
+} #login, #sign-up {
+	color: #fff;
+	width: 50%;
+	text-align: center;
+} #login {
+	float: left;
+} #sign-up {
+	float: right;
+} .field-label {
+	font-size: 16px;
+} #username, #password {
+	background-color: #242628;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 32px;
+	padding: 8px;
+	width: 100%;
+} #checkbox-box {
+	height: 32px;
+	margin-bottom: 32px;
+} .check-label {
+	float: right;
+	font-size: 18px;
+} #show-password {
+	float: left;
+} #save-session {
+	float: right;
+} input[type="checkbox"] {
+	height: 24px;
+	margin-right: 8px;
+	width: 24px;
+} #submit {
+	background-color: #242628;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	color: #fff;
+	display: block;
+	font-size: 24px;
+	height: 48px;
+	justify-self: center;
+	font-weight: bold;
+	width: 50%;
+} #submit:hover {
+	background-color: #121314;
+	cursor: pointer;
+} #submit:active {
+	background-color: #060607;
+}
