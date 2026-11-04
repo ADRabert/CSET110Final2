@@ -44,6 +44,7 @@
 	background-color: #242628;
 	border: 1px solid #fff;
 	border-radius: 8px;
+	box-shadow: 0px 0px 8px #000;
 	color: #fff;
 	font-size: 16px;
 	margin-bottom: 16px;
@@ -60,6 +61,7 @@
 } #save-session {
 	float: right;
 } input[type="checkbox"] {
+	box-shadow: 0px 0px 8px #000;
 	height: 24px;
 	margin-right: 8px;
 	width: 24px;
@@ -67,6 +69,7 @@
 	background-color: #242628;
 	border: 1px solid #fff;
 	border-radius: 8px;
+	box-shadow: 0px 0px 8px #000;
 	color: #fff;
 	display: block;
 	font-size: 24px;
