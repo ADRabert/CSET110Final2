@@ -2,24 +2,37 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+} @keyframes showOnLoad {
+	from {
+		top: 100px;
+		opacity: 0;
+	} to {
+		top: 0;
+		opacity: 1;
+	}
 } body {
 	background-attachment: fixed;
 	background-image: linear-gradient(#121314ff 50%, #125314ff 100%);
 	color: #fff;
 	font-family: sans-serif;
 } body h1 {
+	animation-duration: 667ms;
+	animation-name: showOnLoad;
 	font-size: 48px;
 	font-style: italic;
 	margin-top: 32px;
 	text-align: center;
 } #login-box {
-	background-color: #242628;
+	animation-duration: 667ms;
+	animation-name: showOnLoad;
+	background-image: radial-gradient(circle, #242628 88.889%, #246628 100%);
 	border: 1px solid #fff;
 	border-radius: 32px;
 	box-shadow: 0px 0px 16px #125314;
 	justify-self: center;
 	margin: 16px 0px;
 	padding: 16px 32px;
+	position: relative;
 	width: 512px;
 } #options {
 	margin-bottom: 32px;
@@ -36,8 +49,10 @@
 } .unselected:hover {
 	background-color: #1f1f1f;
 	cursor: pointer;
+	transition: background-color 100ms;
 } .unselected:active {
 	background-color: #2f2f2f;
+	transition: background-color 50ms;
 } #login, #sign-up {
 	color: #fff;
 	width: 50%;
@@ -84,8 +99,14 @@
 	font-weight: bold;
 	width: 50%;
 } #submit:hover {
-	background-color: #121314;
+	background-image: linear-gradient(#242628 50%, #246628 100%);
 	cursor: pointer;
+	scale: 1.111;
+	transition: background-image 100ms, scale 100ms;
 } #submit:active {
-	background-color: #060607;
+	background-image: linear-gradient(#060607 50%, #061707 100%);
+	scale: 0.889;
+	transition: background-image 50ms, scale 50ms;
+} p {
+	text-align: center;
 }
