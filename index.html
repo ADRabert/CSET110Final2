@@ -1,18 +1,22 @@
 <html><head>
-	<link href="assets/style.css" rel="stylesheet">
+	<link href="assets/common.css" rel="stylesheet">
+	<link href="assets/login.css" rel="stylesheet">
 	<title>Login</title>
 </head><body>
+	<h1>Mao Industries Forum</h1>
 	<div id="login-box">
 		<div id="options">
 			<button disabled class="selected" id="login" onclick="toggleState(this)">Login</button>
 			<button class="unselected" id="sign-up" onclick="toggleState(this)">Sign up</button>
 		</div>
 		<br>
-		<form>
+		<form action="welcome.html">
 			<label class="field-label" for="username">Username</label>
 			<br>
 			<input id="username" placeholder="Username" type="text">
 			<br>
+			<label id="email-label" for="email" style="display: none;">Email address</label>
+			<input id="email" placeholder="Email address" style="display: none;" type="email">
 			<label class="field-label" for="password">Password</label>
 			<br>
 			<input id="password" placeholder="Password" type="password">
@@ -29,4 +33,4 @@
 		</form>
 	</div>
 </body></html>
-<script src="assets/script.js"></script>
+<script src="assets/login.js"></script>

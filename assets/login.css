@@ -1,19 +1,14 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-} body {
-	background-color: #121314;
-	color: #fff;
-	font-family: sans-serif;
-} #login-box {
-	background-color: #242628;
+#login-box {
+	animation-duration: 667ms;
+	animation-name: showOnLoad;
+	background-image: radial-gradient(circle, #242628 88.889%, #246628 100%);
 	border: 1px solid #fff;
 	border-radius: 32px;
+	box-shadow: 0px 0px 16px #125314;
 	justify-self: center;
-	margin-top: 32px;
+	margin: 16px 0px;
 	padding: 16px 32px;
-	height: 384px;
+	position: relative;
 	width: 512px;
 } #options {
 	margin-bottom: 32px;
@@ -30,8 +25,10 @@
 } .unselected:hover {
 	background-color: #1f1f1f;
 	cursor: pointer;
+	transition: background-color 100ms;
 } .unselected:active {
 	background-color: #2f2f2f;
+	transition: background-color 50ms;
 } #login, #sign-up {
 	color: #fff;
 	width: 50%;
@@ -40,15 +37,17 @@
 	float: left;
 } #sign-up {
 	float: right;
-} .field-label {
-	font-size: 16px;
-} #username, #password {
+} .field-label, #email-label {
+	font-size: 20px;
+	font-style: italic;
+} #username, #email, #password {
 	background-color: #242628;
 	border: 1px solid #fff;
 	border-radius: 8px;
+	box-shadow: 0px 0px 8px #000;
 	color: #fff;
 	font-size: 16px;
-	margin-bottom: 32px;
+	margin-bottom: 16px;
 	padding: 8px;
 	width: 100%;
 } #checkbox-box {
@@ -62,6 +61,7 @@
 } #save-session {
 	float: right;
 } input[type="checkbox"] {
+	box-shadow: 0px 0px 8px #000;
 	height: 24px;
 	margin-right: 8px;
 	width: 24px;
@@ -69,6 +69,7 @@
 	background-color: #242628;
 	border: 1px solid #fff;
 	border-radius: 8px;
+	box-shadow: 0px 0px 8px #000;
 	color: #fff;
 	display: block;
 	font-size: 24px;
@@ -77,8 +78,12 @@
 	font-weight: bold;
 	width: 50%;
 } #submit:hover {
-	background-color: #121314;
+	background-image: linear-gradient(#242628 50%, #246628 100%);
 	cursor: pointer;
+	scale: 1.111;
+	transition: background-image 100ms, scale 100ms;
 } #submit:active {
-	background-color: #060607;
+	background-image: linear-gradient(#060607 50%, #061707 100%);
+	scale: 0.889;
+	transition: background-image 50ms, scale 50ms;
 }
